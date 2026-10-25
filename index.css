@@ -1,0 +1,18 @@
+main {
+    flex: 1;
+    display: flex;
+}
+
+
+.game-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.game-content img {
+    max-width: 100px;
+    
+}

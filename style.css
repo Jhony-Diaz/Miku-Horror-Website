@@ -1,0 +1,125 @@
+:root {
+    --background-color: lightblue;
+    --button-colors: rgb(50, 185, 206);
+    --accent-color: hotpink;
+    --text-color:black;
+    --highlighted-text: rgb(254, 153, 203);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+.hearts{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    gap: 5px;
+}
+
+.hearts img {
+    
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-pages{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-pages a {
+    display: flex;
+  
+    text-decoration: none;
+    color: black;
+   
+    padding: 10px;
+
+
+
+}
+
+.nav-pages a:hover {
+    color: var(--highlighted-text);
+    transform: scale(1.50);
+}
+
+.miku-container{
+    position: fixed;
+
+    z-index: -2;
+
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+ 
+
+
+}
+
+.miku-head img {
+width: 600px;
+}
+
+#danger-zone1 {
+    position: fixed;
+    top: 0%;
+    left: 600px;
+    width: 100px;
+    height: 100vh;
+    background-color: grey;
+}
+
+#danger-zone2 {
+    position: fixed;
+    top: 0%;
+    right: 600px;
+    width: 100px;
+    height: 100vh;
+    background-color: grey;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.miku-container {
+    position: fixed;
+    width: 100vw;
+    height: 650px;
+
+    left: 50%;
+    top: 55%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#miku-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

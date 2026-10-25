@@ -1,0 +1,14 @@
+# Unrelated learning notes
+/practice.js
+
+# Downloaded model: keep local until redistribution terms are verified
+/Models/*.vrm
+
+# Local tooling and system files
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
